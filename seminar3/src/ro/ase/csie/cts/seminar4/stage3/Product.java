@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar3.stage1;
+package ro.ase.csie.cts.seminar4.stage3;
 
 import ro.ase.csie.cts.seminar3.exceptions.InvalidAccountAgeException;
 import ro.ase.csie.cts.seminar3.exceptions.InvalidPriceException;
