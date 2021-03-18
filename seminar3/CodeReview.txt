@@ -5,4 +5,10 @@ Stage 1. Naming conventions
 	- Rename Calculeaza - Use small caps
 	- Rename the function arguments
 	- Rename 'rezultat'
-	- Rename 'valoare' 
+	- Rename 'valoare'
+	
+	- Format your code
+	
+	- Remove the hardcoded values aka "magic numbers"
+	
+	- Validate the input values
