@@ -1,0 +1,30 @@
+Naming Conventions:
+ - Use only one naming convention (camelCase)
+ - Rename 'rate' to be more specific (monthly/yearly etc...)
+ - Rename 'loan' function
+ - Rename 'rate' function to accommodate for the new variable name
+ - Rename 'setValue' function to be more representative
+ - Override 'toString' function implementation instead of using 'to_string' function
+ - Rename 'calculate' function to be more representative
+
+Folder Separation:
+ - Put ENUM in another file and use it accordingly
+ - Make 'getMonthlyRate' an Interface
+
+General Remarks:
+ - For declaration of variables, put each variable on a separate line
+ - Make 'account_Type' of the ENUM type
+ - 'setValue' throws generic Exception. Change the exception to a more appropriate type and send an exception message
+ - No need for the 'else' block of 'setValue'
+ - Implement proper spacing and code formatting for the 'to_string' function
+ - When referring to current object fields, either use this. prefix for all of them or for none. (check 'to_string' function)
+ - 'print' function is useless. Remove it
+ - Implement proper spacing and code formatting in 'calculate' function
+ - Remove comments from within a line of code
+ - Make broker's fee a constant variable
+ - 'Temp' variable not used. Make it a constant and rename it before using it
+ - Remove uselss brackets from 'calculate' function
+ - What happens when condition isn't met in 'calculate' function? Handle this case as well
+ - Move constructor to the start of the class
+ - Constructor throws a generic Exception. Change it to a more appropriate type and send an exception message
+ - Update constructor parameters to match ENUM usage
