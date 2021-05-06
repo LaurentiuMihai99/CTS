@@ -1,0 +1,18 @@
+RE-Invest:
+The best web application regarding apartment rentals in Bucharest. The difficult part of the solution is done
+using UiPath RPA Robots, development which isn't object oriented. The Web Application part is mostly for
+the front-end, for the user interaction. Therefore, it only contains one class: Listing. This class contains
+the required fields in order for the solution to work properly. Unfortunately, most concepts don't make sense
+to be applied in my application due to the facts stated above, but I tried to make the best of what I have.
+
+The Builder pattern allows for quick and easy creation of objects without the need to specify all the fields of
+a certain object at its creation, allowing for further customization using methods. In the Listings case it is useful for
+handling the specs of an apartment in a listing. 
+ 
+Advantages:
+- Allows for easy customization of objects at it s creation without the need to manually address each field
+- Previously written code remains pretty much up to date when using a Builder implementation (at least from a syntax POV)
+
+Disadvantages:
+- If not used accordingly, can cause problems (calling a certain method twice)
+- Has to be kept up to date with every single new modification of the class it builds

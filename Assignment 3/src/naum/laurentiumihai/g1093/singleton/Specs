@@ -1,0 +1,18 @@
+RE-Invest:
+The best web application regarding apartment rentals in Bucharest. The difficult part of the solution is done
+using UiPath RPA Robots, development which isn't object oriented. The Web Application part is mostly for
+the front-end, for the user interaction. Therefore, it only contains one class: Listing. This class contains
+the required fields in order for the solution to work properly. Unfortunately, most concepts don't make sense
+to be applied in my application due to the facts stated above, but I tried to make the best of what I have.
+
+The Singleton method isn't useful in this case due to the way the application actually works,
+but I am going to simulate the database connectivity as the use case for the Singleton.
+ 
+Advantages:
+- Only one instance of the database connection can be active at a time
+- Allows for much easier tracking of query timestamps and handling of eventual timeouts
+- Secure manipulation of timeouts (even though this still shouldn't be done from within the solution itself)
+
+Disadvantages:
+- In case the current connection breaks down, you cannot test the connection without firstly killing the current one
+- Cannot benefit from multithreading advantages (mostly time)

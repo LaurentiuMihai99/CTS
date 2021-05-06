@@ -1,0 +1,17 @@
+RE-Invest:
+The best web application regarding apartment rentals in Bucharest. The difficult part of the solution is done
+using UiPath RPA Robots, development which isn't object oriented. The Web Application part is mostly for
+the front-end, for the user interaction. Therefore, it only contains one class: Listing. This class contains
+the required fields in order for the solution to work properly. Unfortunately, most concepts don't make sense
+to be applied in my application due to the facts stated above, but I tried to make the best of what I have.
+
+The Factory method is useful when creating copies of listings which are going to be used within the scoring algorithms to
+give a certain rating to the listings.
+
+Advantages:
+- Allows to add or remove listing objects at runtime
+- Allows for quick and easy creation of objects without the need to specify all the fields and so on for every single object
+
+Disadvantages:
+- Can create confusion when used multiple times on the same object
+- Can create changes in specific listings without the intent of doing so

@@ -1,0 +1,21 @@
+RE-Invest:
+The best web application regarding apartment rentals in Bucharest. The difficult part of the solution is done
+using UiPath RPA Robots, development which isn't object oriented. The Web Application part is mostly for
+the front-end, for the user interaction. Therefore, it only contains one class: Listing. This class contains
+the required fields in order for the solution to work properly. Unfortunately, most concepts don't make sense
+to be applied in my application due to the facts stated above, but I tried to make the best of what I have.
+
+The Factory method aims to solve the need to rewrite code when a change to the database format is made.
+Given the fact that the database only contains one table and therefore only one object is used,
+that object is heavily used throughout the solution.
+ 
+Advantages:
+- No need to rewrite previously written code in order to accomodate for table changes within the database
+- No need to specify all attributes of a 'Listing' object every time you instatiate a new one
+
+Disadvantages:
+- Checks should be implemented when using certain fields of the 'Listing' objects since they are not neccesarily
+going to have valid data within them
+- Given the fact that all 'Listing' objects should come directly from the database, a factory is going to allow
+another input method into the solution. If not handled accordingly, such input can influence the final
+results
