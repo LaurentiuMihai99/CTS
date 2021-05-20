@@ -1,0 +1,15 @@
+package ro.ase.csie.dp.observer;
+
+public class BackupModule implements ConnectionStatusInterface {
+
+	@Override
+	public void connectionUp() {
+		System.out.println("Display restore points");
+	}
+
+	@Override
+	public void connectionDown() {
+		System.out.println("Connection is down");
+	}
+
+}
